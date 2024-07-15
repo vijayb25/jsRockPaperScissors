@@ -1,0 +1,11 @@
+#choices{text-align: center; display: flex; justify-content:center; gap: 20px;}
+
+#choices button{width: 150px; aspect-ratio: 1/1; font-size: 5rem; border: none; background: #8dc76c; border-radius: 50%; cursor: pointer; margin: 30px 0;}
+
+#gameTitle{text-align: center; margin: 20px 0;}
+.gameInfo{text-align: center;display: flex;flex-direction: column;gap: 10px;font-size: 1.5rem;}
+
+.greenText, #playerScoreDisplay{color: #358d03;}
+.redText, #computerScoreDisplay{color: #c20a0a;}
+
+.scoreDisplay{font-size: 1.5rem; text-align: center; margin: 20px 0;}
