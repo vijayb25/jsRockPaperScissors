@@ -6,8 +6,10 @@ const computerDisplay = document.getElementById("computerDisplay");
 const resultDisplay = document.getElementById("resultDisplay");
 const playerScoreDisplay = document.getElementById("playerScoreDisplay");
 const computerScoreDisplay = document.getElementById("computerScoreDisplay");
+const tieDisplay = document.getElementById("tieDisplay");
 let playerScore = 0;
 let computerScore = 0;
+let tieScore = 0;
 
 
 function playGame(playerChoice){
@@ -18,6 +20,7 @@ function playGame(playerChoice){
 
     if(playerChoice === computerChoice){
         result = "IT'S A TIE";
+        tieScore++;
     }
     else {
         switch(playerChoice){
@@ -36,6 +39,7 @@ function playGame(playerChoice){
     playerDisplay.textContent = `PLAYER: ${playerChoice}`;
     computerDisplay.textContent = `COMPUTER: ${computerChoice}`;
     resultDisplay.textContent = result;
+    tieDisplay.textContent = tieScore;
 
     resultDisplay.classList.remove("greenText", "redText");
 
@@ -53,5 +57,4 @@ function playGame(playerChoice){
     }
 
 }
-
 // === End Rock Paper Scissors ===
